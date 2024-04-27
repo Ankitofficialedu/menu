@@ -1,0 +1,88 @@
+/* nav styling and responsive approach */
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    background-color:white;
+    flex-wrap: wrap;
+    min-height: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+body{
+    background-color:rgba(223, 198, 162, 0.885);
+    
+}
+
+/* grouplink adjustment responsive */
+.grouplinks{
+    display: flex;
+    gap: 35px;
+    list-style:none;
+}
+/* link styling */
+a{
+    color:black;
+    font-size: 17px;
+    font-weight:400;
+    text-decoration:none;
+    transition: all 500ms;
+   display: flex;
+   gap: 9px;
+   
+}
+/* button styling */
+button{
+    width:140px;
+    height: 40px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color:rgb(199, 95, 57) ;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
+    
+   
+}
+/* button a style we don,t add class to anchor tag */
+button a{
+    color: white;
+}
+/* styling image */
+.arrow{
+    transition: all 500ms;
+}
+/* hover section stars  */
+ul li a:hover{
+    color:orangered;
+}
+button:hover{
+    background-color: rgb(98, 58, 47);
+    transform: rotate(0.5deg);
+
+}
+
+button:hover .arrow{
+    transform: translateX(5px) scale(1.5);
+
+
+}
+/* hover section ends here */
+/* adjusting our button for small scree(mobiles) */
+@media screen and (max-width:308px) {
+   button{
+margin-top: 25px;
+   }
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
